@@ -60,7 +60,7 @@ def create_model(args, prior_model=None, mean=None, std=None):
         raise ValueError(f'Unknown architecture: {args["model"]}')
 
     representation_spec_model = None
-    if args["uv_model"] == "CNN-AM":
+    if args["spectra_model"] == "CNN-AM":
         from torchmdnet.models import CNN_AM
 
         input_dim = 1500
@@ -70,7 +70,7 @@ def create_model(args, prior_model=None, mean=None, std=None):
             in_channel=in_channel,
             output_channel=args["embedding_dimension"],
         )
-    elif args["uv_model"] == "SpecFormer":
+    elif args["spectra_model"] == "SpecFormer":
         from torchmdnet.models import SpecFormer
 
         representation_spec_model = SpecFormer(

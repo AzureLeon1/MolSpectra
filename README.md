@@ -21,9 +21,9 @@ Please refer to the scripts in the `scripts/` directory for pre-training and fin
 * ase>=3.23.0
 * h5py>=3.11.0
 * matplotlib>=3.10.0
-* numpy>=2.2.3
+* numpy>=1.26.3
 * pytorch_lightning>=1.3.8
-* PyYAML>=6.0.2
+* PyYAML>=5.4.1
 * tqdm>=4.66.5
 
 ## Citation

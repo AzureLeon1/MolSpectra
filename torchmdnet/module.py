@@ -5,11 +5,12 @@ from torch.nn.functional import mse_loss, l1_loss, smooth_l1_loss
 
 from pytorch_lightning import LightningModule
 from torchmdnet.models.model import create_model, load_model
+from math import inf
+
 
 
 class PlateauScheduler(ReduceLROnPlateau):
     def __init__(self, factor, patience):
-        from torch._six import inf
 
         self.factor = factor
         self.patience = patience

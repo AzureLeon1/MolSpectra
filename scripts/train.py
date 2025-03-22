@@ -109,7 +109,7 @@ def get_args():
 
     parser.add_argument('--output-model-spec', type=str, default=None, choices=output_modules.__all__ + ['VectorOutput'], help='The type of output model for spectra feature')
     parser.add_argument('--output-model-mol', type=str, default=None, choices=output_modules.__all__ + ['VectorOutput'], help='The type of output model for molecule feature')
-    parser.add_argument('--uv-model', type=str, default=None, choices=models.__all__, help='Which model to train contrastive task')
+    parser.add_argument('--spectra-model', type=str, default=None, choices=models.__all__, help='Which model to train contrastive task')
     parser.add_argument('--input-data-norm-type', type=str, default='minmax', choices=['minmax', 'log', 'log10', 'None'], help='which type of norm method do you want for spectra data')
     parser.add_argument('--contrastive-weight', default=0., type=float, help='Weighting factor for contrastive learning in the loss function')
 

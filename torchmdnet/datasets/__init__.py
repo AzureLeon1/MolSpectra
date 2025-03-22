@@ -13,7 +13,5 @@ __all__ = [
     "ANI1",
     "Custom",
     "HDF5",
-    "PCQM4MV2",
-    "MultiSpec",
-    "MultiSpecLarge",
+    "PCQM4MV2"
 ]

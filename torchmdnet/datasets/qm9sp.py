@@ -55,6 +55,6 @@ class QM9SP(QM9_geometric):
 
 
 if __name__ == "__main__":
-    dataset = QM9SP(root="../data/qm9sp", dataset_arg="homo")
+    dataset = QM9SP(root="~/datasets/3D-Pretrain/qm9sp", dataset_arg="homo")
     print(dataset)
     print(dataset[0])
