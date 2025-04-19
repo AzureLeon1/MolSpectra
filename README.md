@@ -9,7 +9,9 @@ This is the code for the ICLR'25 Paper: [MolSpectra: Pre-training 3D Molecular R
 
 ## Usage
 
-Please refer to the scripts in the `scripts/` directory for pre-training and fine-tuning.
+**Download dataset:** You can find and download the processed QM9S dataset named "qm9sp.zip" using this [link](https://osf.io/wrvcn/?view_only=04fe1a045a06457e96e023de12c87072). Select `Files` to access the dataset. Unzip the file into the target folder, and update the `dataset_root` configuration in `examples/ET-QM9-QM9SP-PT.yaml` and `examples/ET-MD17-QM9SP-PT.yaml` to point to the target folder.
+
+**Pre-train and fine-tune:** Please refer to the scripts in the `scripts/` directory for pre-training and fine-tuning.
 
 ## Requirements
 
